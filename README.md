@@ -1,4 +1,4 @@
-# Khut Sopheaktra — Developer Portfolio
+# Khut Sopheaktra — Portfolio
 
 A personal portfolio website built with **Vue 3** and a bold **Neo-Brutalist** design system — thick borders, hard offset shadows, and bright contrasting colors.
 
