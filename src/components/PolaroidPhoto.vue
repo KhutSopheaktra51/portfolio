@@ -8,7 +8,7 @@
     >
       <img
         v-if="!failed"
-        :src="src.startsWith('/') ? import.meta.env.BASE_URL + src.slice(1) : src"
+        :src="resolvedSrc"
         :alt="alt"
         class="w-full h-full object-cover"
         loading="lazy"
@@ -23,10 +23,10 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import { ImageOff } from 'lucide-vue-next'
 
-defineProps({
+const props = defineProps({
   src: { type: String, required: true },
   alt: { type: String, required: true },
   caption: { type: String, default: '' },
@@ -34,4 +34,12 @@ defineProps({
 })
 
 const failed = ref(false)
+
+// Resolve the path correctly for both local dev and GitHub Pages deployment
+const resolvedSrc = computed(() => {
+  if (props.src.startsWith('/')) {
+    return import.meta.env.BASE_URL + props.src.slice(1)
+  }
+  return props.src
+})
 </script>
