@@ -105,6 +105,6 @@ import { ref } from 'vue'
 import { ArrowRight, Download, ChevronDown, Terminal } from 'lucide-vue-next'
 
 // Put your photo at public/images/profile.jpg (a square crop works best)
-const profileImage = '/images/profile.jpg'
+const profileImage = import.meta.env.BASE_URL + 'images/profile.jpg'
 const photoFailed = ref(false)
 </script>

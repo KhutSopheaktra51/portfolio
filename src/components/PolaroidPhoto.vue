@@ -8,7 +8,7 @@
     >
       <img
         v-if="!failed"
-        :src="src"
+        :src="src.startsWith('/') ? import.meta.env.BASE_URL + src.slice(1) : src"
         :alt="alt"
         class="w-full h-full object-cover"
         loading="lazy"
