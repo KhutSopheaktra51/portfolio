@@ -104,13 +104,13 @@ import { Mail, Github, Linkedin, Send, SendHorizontal } from 'lucide-vue-next'
 // TODO: replace with your real contact info (keep in sync with FooterSection.vue)
 const CONTACT_EMAIL = 'sopheaktrakhut99@gmail.com'
 const GITHUB_URL = 'https://github.com/KhutSopheaktra51'
-const LINKEDIN_URL = 'https://linkedin.com/in/your-profile'
+// const LINKEDIN_URL = 'https://linkedin.com/in/your-profile'
 const TELEGRAM_URL = 'https://t.me/sopheaktra36'
 
 const contacts = [
   { label: 'Email', value: CONTACT_EMAIL, href: `mailto:${CONTACT_EMAIL}`, icon: Mail },
   { label: 'GitHub', value: '@KhutSopheaktra51', href: GITHUB_URL, icon: Github },
-  { label: 'LinkedIn', value: 'your-profile', href: LINKEDIN_URL, icon: Linkedin },
+  // { label: 'LinkedIn', value: 'your-profile', href: LINKEDIN_URL, icon: Linkedin },
   { label: 'Telegram', value: '@sopheaktra36', href: TELEGRAM_URL, icon: SendHorizontal },
 ]
 
