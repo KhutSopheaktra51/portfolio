@@ -21,13 +21,20 @@
         <span
           class="inline-flex items-center gap-2 bg-card border-3 border-ink px-4 py-2 text-sm font-bold shadow-brutal-sm mb-6"
         >
-          <span class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"></span>
+          <span
+            class="w-2.5 h-2.5 rounded-full bg-green-500 animate-pulse"
+          ></span>
           Available for Opportunities
         </span>
 
-        <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.05] mb-6">
+        <h1
+          class="font-display text-4xl sm:text-6xl lg:text-7xl leading-[1.05] mb-6"
+        >
           HI, I'M
-          <span class="bg-primary px-2 inline-block border-3 border-ink -rotate-1">SOPHEAKTRA.</span>
+          <span
+            class="bg-primary px-2 inline-block border-3 border-ink -rotate-1"
+            >SOPHEAKTRA.</span
+          >
         </h1>
 
         <h2 class="text-xl sm:text-2xl font-bold mb-4">
@@ -35,8 +42,8 @@
         </h2>
 
         <p class="text-base sm:text-lg max-w-xl mb-8 text-ink/80">
-          I build practical digital experiences, explore new technologies, and turn ideas into
-          real-world applications.
+          I build practical digital experiences, explore new technologies, and
+          turn ideas into real-world applications.
         </p>
 
         <div class="flex flex-wrap gap-4">
@@ -47,7 +54,7 @@
             Explore My Work <ArrowRight class="w-5 h-5" />
           </a>
           <a
-            href="/public/cv-file/Khut_Sophaektra_Simple_CV.pdf"
+            :href="cvUrl"
             download
             class="inline-flex items-center gap-2 bg-card px-6 py-3 font-bold border-3 border-ink shadow-brutal hover:-translate-y-1 hover:-translate-x-1 hover:shadow-brutal-lg transition-all"
           >
@@ -101,10 +108,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import { ArrowRight, Download, ChevronDown, Terminal } from 'lucide-vue-next'
+import { ref } from "vue";
+import { ArrowRight, Download, ChevronDown, Terminal } from "lucide-vue-next";
 
 // Put your photo at public/images/profile.jpg (a square crop works best)
-const profileImage = import.meta.env.BASE_URL + 'images/profile.jpg'
-const photoFailed = ref(false)
+const profileImage = import.meta.env.BASE_URL + "images/profile.jpg";
+const cvUrl = import.meta.env.BASE_URL + 'resume.pdf'
+const photoFailed = ref(false);
 </script>
