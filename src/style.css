@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  @apply bg-background text-ink font-body antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply font-display;
+}
+
+::selection {
+  @apply bg-primary text-ink;
+}
+
+/* Shared section utilities */
+.section-title {
+  @apply font-display text-3xl sm:text-5xl leading-tight;
+}
+
+.section-tag {
+  @apply inline-block bg-ink text-background px-3 py-1 text-xs font-bold tracking-widest mb-4;
+}
