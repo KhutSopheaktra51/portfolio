@@ -4,10 +4,6 @@ A personal portfolio website built with **Vue 3** and a bold **Neo-Brutalist** d
 
 🔗 **Live site:** [khutsopheaktra51.github.io/portfolio](https://khutsopheaktra51.github.io/portfolio/)
 
-![Neo-Brutalist Portfolio](public/images/profile.jpg)
-
----
-
 ## About
 
 I'm a university Computer Science student based in Phnom Penh, Cambodia, passionate about backend development, modern frontend technologies, and turning ideas into real-world applications. This portfolio showcases my projects, skills, and journey as an aspiring software developer.
