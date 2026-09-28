@@ -34,4 +34,3 @@ I'm a university Computer Science student based in Phnom Penh, Cambodia, passion
 
 ---
 
-## Project Structure
